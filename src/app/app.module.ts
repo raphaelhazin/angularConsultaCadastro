@@ -6,19 +6,27 @@ import {InputTextModule} from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import {FormsModule} from '@angular/forms';
 import { ConsultaComponent } from './consulta/consulta.component';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component'
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ConsultaComponent
+    ConsultaComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     InputTextModule,
     FormsModule,
-    ButtonModule
+    ButtonModule,
+    RouterModule.forRoot([
+      {path: 'consulta', component: ConsultaComponent},
+      {path: 'home', component: HomeComponent},
+      {path: '', pathMatch:'full', redirectTo: '/home'}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
