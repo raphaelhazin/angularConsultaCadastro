@@ -1,0 +1,42 @@
+<div>
+    <br/>
+    <br/>
+    <br/>
+    <span class="p-float-label">
+      <input id="fi_inscricao" type="text" [(ngModel)]="consulta.inscricao" pInputText> 
+      <label for="fi_inscricao">Inscrição</label>
+    </span>
+    <br/>
+    <span class="p-float-label">
+      <input id="fi_nome" type="text" [(ngModel)]="consulta.nome" pInputText> 
+      <label for="fi_nome">Nome</label>
+    </span>
+    <br/>
+    <span class="p-float-label">
+      <input id="fi_sobrenome" type="text" [(ngModel)]="consulta.sobrenome" pInputText> 
+      <label for="fi_sobrenome">Sobrenome</label>
+    </span>
+    <br/>
+    <span class="p-float-label">
+      <input id="fi_cpf" type="text" [(ngModel)]="consulta.cpf"  pInputText> 
+      <label for="fi_cpf">CPF</label>
+    </span>
+    <br/>
+    <span class="p-float-label">
+      <input id="fi_cnpj" type="text" [(ngModel)]="consulta.cnpj"  pInputText> 
+      <label for="fi_cnpj">CNPJ</label>
+    </span>
+    <br/>
+    <span class="p-float-label">
+      <input id="fi_situacao" type="text" [(ngModel)]="consulta.situacao" pInputText> 
+      <label for="fi_situacao">Situação</label>
+    </span>
+    <br/>
+    <span class="p-float-label">
+      <input id="fi_tpinscricao" type="text" [(ngModel)]="consulta.tpinscricao" pInputText> 
+      <label for="fi_tpinscricao">Tipo Inscrição</label>
+    </span>
+  
+    <br/>
+    <button type="button" pButton label="Consultar" (click)="consultaDados()"></button>
+  </div>

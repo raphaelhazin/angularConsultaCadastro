@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import {InputTextModule} from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import {FormsModule} from '@angular/forms';
+import { ConsultaComponent } from './consulta/consulta.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ConsultaComponent
   ],
   imports: [
     BrowserModule,

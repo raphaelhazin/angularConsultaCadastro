@@ -1,4 +1,5 @@
-export class App {
+export class Consulta {
+
     public inscricao: String;
     public nome: String;
     public sobrenome: String;
@@ -9,6 +10,13 @@ export class App {
 
     constructor () {
         
+    }
+
+    consultar () {
+        console.log("BANANA");
+        console.log(this.nome);
+        console.log(this.sobrenome);
+        console.log(this.cpf);
     }
 
 }
