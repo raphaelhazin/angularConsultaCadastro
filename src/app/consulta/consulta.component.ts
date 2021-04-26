@@ -15,11 +15,12 @@ export class ConsultaComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.consulta = this.consultaService.getConsulta();
+    this.consulta = this.consultaService.getIntance(); 
   }
 
   consultaDados () {
-    this.consulta.consultar();
-  }
-
+    // this.consulta.consultar();
+    this.consultaService.getConsulta().subscribe(
+        resultado => console.log(resultado));
+      }
 }
