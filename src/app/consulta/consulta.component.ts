@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Consulta } from './consulta';
+import { ConsultaService } from './consulta.service';
 
 @Component({
   selector: 'app-consulta',
@@ -9,11 +10,12 @@ import { Consulta } from './consulta';
 export class ConsultaComponent implements OnInit {
 
   public consulta : Consulta;
-  constructor() {
-    this.consulta = new Consulta();
+  constructor(private consultaService : ConsultaService) {
+    
    }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.consulta = this.consultaService.getConsulta();
   }
 
   consultaDados () {
